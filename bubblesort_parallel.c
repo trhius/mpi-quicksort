@@ -299,9 +299,9 @@ int  main(int argc, char** argv) {
 	if(id == 0) {
 		/* read imput file */
 		size = count_integers(argv[1]);
-        if (size == -1) {
-            MPI_Abort(MPI_COMM_WORLD, 1);
-        }
+        // if (size == -1) {
+        //     MPI_Abort(MPI_COMM_WORLD, 1);
+        // }
 
         printf("Total number of random numbers in the file: %d\n", size);
 		printf("Each processor has: %d numbers\n", size/num_proc);
